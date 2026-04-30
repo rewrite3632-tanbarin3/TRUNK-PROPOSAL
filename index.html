@@ -22,6 +22,9 @@
             background-color: #A68546;
             transform: translateY(-2px);
         }
+        html {
+            scroll-behavior: smooth;
+        }
     </style>
 </head>
 <body class="bg-slate-50">
@@ -32,7 +35,7 @@
             <nav class="hidden md:flex space-x-8 text-sm tracking-widest">
                 <a href="#about" class="hover:text-amber-700">ABOUT</a>
                 <a href="#styles" class="hover:text-amber-700">STYLES</a>
-                <a href="#price" class="hover:text-amber-700">PRICE</a>
+                <a href="#scene" class="hover:text-amber-700">SCENE</a> <a href="#price" class="hover:text-amber-700">PRICE</a>
                 <a href="https://glastonia.net/" class="btn-gold text-white px-4 py-2 rounded shadow-sm">RESERVE</a>
             </nav>
         </div>
@@ -83,19 +86,66 @@
         </div>
     </section>
 
-    <section id="price" class="py-24 bg-white border-y border-gray-100">
+    <section id="scene" class="py-24 bg-white overflow-hidden border-t border-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="w-full md:w-1/2">
+                    <h3 class="eng-font text-sm tracking-[0.3em] text-amber-700 mb-4">RECOMMENDED SCENE</h3>
+                    <h4 class="text-2xl md:text-3xl mb-8 leading-relaxed">前撮りのラストシーンに、<br>サプライズの魔法を。</h4>
+                    <p class="text-gray-600 leading-loose mb-8 text-sm md:text-base">
+                        結婚式を控えた「前撮り」の日。グラストニアの美しいロケーションをバックに撮影を楽しんだ最後、お車のトランクを開けて、改めて愛の言葉を贈りませんか？<br><br>
+                        日常から離れた式場という舞台、そしてドレスアップしたお二人。最高のコンディションをプロのフォトグラファーが逃さず記録します。
+                    </p>
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-start gap-4">
+                            <span class="btn-gold text-white text-[10px] px-2 py-1 rounded mt-1">Point 01</span>
+                            <p class="text-sm">撮影の名目があるため、サプライズ準備がバレにくい</p>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <span class="btn-gold text-white text-[10px] px-2 py-1 rounded mt-1">Point 02</span>
+                            <p class="text-sm">専属カメラマンが感動の瞬間をクオリティ高く記録</p>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <span class="btn-gold text-white text-[10px] px-2 py-1 rounded mt-1">Point 03</span>
+                            <p class="text-sm">写真は挙式当日のウェルカムボードやムービーに活用可能</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 relative">
+                    <div class="aspect-[3/4] bg-gray-100 rounded-sm shadow-2xl overflow-hidden">
+                        <img src="image_3.png" alt="Pre-wedding Surprise Scene" class="object-cover w-full h-full transition-transform duration-500 hover:scale-105">
+                    </div>
+                    <div class="absolute -bottom-6 -left-6 bg-white p-6 shadow-xl hidden lg:block border border-gray-100">
+                        <p class="text-xs tracking-widest text-amber-700 font-bold mb-3 uppercase">Time Schedule Example</p>
+                        <ul class="text-[11px] leading-relaxed text-gray-500 space-y-2">
+                            <li class="flex items-center gap-2">
+                                <span class="w-1 h-1 bg-amber-700 rounded-full"></span> 15:00 - 館内ロケーション撮影開始
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="w-1 h-1 bg-amber-700 rounded-full"></span> 16:30 - ガーデン（車前）へ移動
+                            </li>
+                            <li class="flex items-center gap-2 font-bold text-amber-700">
+                                <span class="w-1 h-1 bg-amber-700 rounded-full"></span> 16:45 - トランクを開けてサプライズ
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="price" class="py-24 bg-slate-50 border-y border-gray-100">
         <div class="container mx-auto px-6 text-center">
             <h3 class="eng-font text-3xl mb-6 tracking-widest">PRICE</h3>
             <p class="text-4xl mb-4 eng-font font-light">¥55,000 <span class="text-sm font-sans italic text-gray-400">～ (tax in)</span></p>
-            <div class="max-w-md mx-auto bg-slate-50 p-8 rounded-lg mt-10">
+            <div class="max-w-md mx-auto bg-white p-8 rounded-lg mt-10 shadow-sm">
                 <ul class="text-left space-y-4 text-sm tracking-widest text-gray-700">
-                    <li class="flex justify-between border-b pb-2">
+                    <li class="flex justify-between border-b pb-2 border-gray-50">
                         <span>季節のフラワーデコレーション</span> <span>Included</span>
                     </li>
-                    <li class="flex justify-between border-b pb-2">
+                    <li class="flex justify-between border-b pb-2 border-gray-50">
                         <span>オリジナルメッセージカード</span> <span>Included</span>
                     </li>
-                    <li class="flex justify-between border-b pb-2">
+                    <li class="flex justify-between border-b pb-2 border-gray-50">
                         <span>専属コーディネーター相談</span> <span>Included</span>
                     </li>
                 </ul>
